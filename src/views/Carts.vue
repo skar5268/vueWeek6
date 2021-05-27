@@ -62,7 +62,7 @@
         </table>
       </div>
       <div class="col-10 col-lg-6">
-        <Form class="row g-3" v-slot="{ errors }">
+        <Form class="row g-3" v-slot="{ errors }" @submit="sendOrder">
           <h2 class="fw-bold">訂購資訊</h2>
           <div class="col-12">
             <label for="email" class="form-label d-block">Email</label>
@@ -151,7 +151,7 @@
             ></textarea>
           </div>
           <div class="col-12">
-            <button class="btn btn-primary" @submit.prevent="sendOrder">送出訂單</button>
+            <button class="btn btn-primary" type="submit">送出訂單</button>
           </div>
         </Form>
       </div>

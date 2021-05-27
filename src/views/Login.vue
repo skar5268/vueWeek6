@@ -7,7 +7,7 @@
             <h2 class="h1 fw-bold text-center text-primary mb-5">
               <span class=" d-inline-block pb-2 border-bottom border-primary border-3"> LOGIN</span>
             </h2>
-            <Form v-slot="{ errors }">
+            <Form v-slot="{ errors }" @submit="login">
               <div class="form-floating mb-4">
                 <Field
                   type="email"
@@ -46,7 +46,7 @@
                   記住帳號
                 </label>
               </div>
-              <button class="btn btn-lg btn-primary w-100" @submit.prevent="login">登入</button>
+              <button class="btn btn-lg btn-primary w-100" type="submit">登入</button>
             </Form>
           </div>
         </div>

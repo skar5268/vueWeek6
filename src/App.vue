@@ -37,8 +37,8 @@
 <style lang="scss">
 .navbar-nav {
   .active {
-    background: #0b5ed7;
-    color: #f8f9fa !important;
+    background: #5d3819;
+    color: #fff2e3 !important;
   }
 }
 </style>
